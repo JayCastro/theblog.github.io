@@ -53,3 +53,4 @@ fabric.properties
 .idea
 node_modules
 _dist
+.DS_Store
