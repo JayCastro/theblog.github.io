@@ -53,4 +53,6 @@ fabric.properties
 .DS_Store
 .idea
 node_modules
+
+# Directory used in dev mode:
 _dist
