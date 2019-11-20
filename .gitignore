@@ -55,5 +55,5 @@ fabric.properties
 node_modules
 local
 
-# Directory used in dev mode:
-_dist
+# CUSTOM on master
+.gitignore
