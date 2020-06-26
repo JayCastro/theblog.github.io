@@ -5,10 +5,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>iCloud Key-Value Storage in Swift 3</title>
 
-    <!-- SEO start -->
+    
     <meta name="description" content="A really quick tutorial with 4 lines of code on how to add iCloud backups / synchronization to your app">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="website">
@@ -19,9 +19,9 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:description" content="A really quick tutorial with 4 lines of code on how to add iCloud backups / synchronization to your app">
     <meta name="twitter:title" content="iCloud Key-Value Storage in Swift 3">
-    <!-- SEO end -->
+    
 
-    <!-- Favicons start -->
+    
     <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-icon-72x72.png">
@@ -40,9 +40,9 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <!-- Favicons end -->
+    
 
-    <!-- Stylesheets start -->
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -53,46 +53,31 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/post-util.css">
     <link rel="stylesheet" href="/css/nav.css">
-    <!-- Stylesheets end -->
+    
 
       <link rel="stylesheet" href="https://unpkg.com/applause-button/dist/applause-button.css">
 
     
 
-    <!-- Matomo start -->
-    <script type="text/javascript">
-        var _paq = window._paq || [];
-        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-        // Call disableCookies before calling trackPageView
-        _paq.push(['disableCookies']);
-        _paq.push(['trackPageView']);
-        _paq.push(['enableLinkTracking']);
-        (function() {
-            var u="https://ec2-01.batzner.io/analytics/matomo/";
-            _paq.push(['setTrackerUrl', u+'matomo.php']);
-            _paq.push(['setSiteId', '1']);
-            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-        })();
-    </script>
-    <!-- Matomo end-->
+    
+    <script type="text/javascript">var _paq=window._paq||[];_paq.push(["disableCookies"]),_paq.push(["trackPageView"]),_paq.push(["enableLinkTracking"]),function(){var e="https://ec2-01.batzner.io/analytics/matomo/";_paq.push(["setTrackerUrl",e+"matomo.php"]),_paq.push(["setSiteId","1"]);var a=document,t=a.createElement("script"),p=a.getElementsByTagName("script")[0];t.type="text/javascript",t.async=!0,t.defer=!0,t.src=e+"matomo.js",p.parentNode.insertBefore(t,p)}();</script>
+    
 </head>
 
 <body>
 
-<!-- Matomo Image Pixel start -->
-<img src="https://ec2-01.batzner.io/ln/mtmslm.php?idsite=1&amp;rec=1&amp;action_name=iCloud+Key-Value+Storage+in+Swift+3" style="border:0; margin:0; position:absolute; opacity:0; max-width:1px; max-height:1px" alt="" />
-<!-- Matomo Image Pixel end -->
+
+<img src="https://ec2-01.batzner.io/ln/mtmslm.php?idsite=1&amp;rec=1&amp;action_name=iCloud+Key-Value+Storage+in+Swift+3" style="border:0; margin:0; position:absolute; opacity:0; max-width:1px; max-height:1px" alt>
+
 
 <div id="main-navbar-sticky-background"></div>
 
 <nav role="navigation" id="main-navbar" class="navbar navbar-default">
 
     <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
+        
         <div class="navbar-header">
-            <button type="button" data-target="#main-navbar-collapse" data-toggle="collapse"
-                    class="navbar-toggle collapsed" aria-expanded="false">
+            <button type="button" data-target="#main-navbar-collapse" data-toggle="collapse" class="navbar-toggle collapsed" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -100,13 +85,13 @@
             </button>
             <div class="navbar-brand">
                 <a href="https://theblog.github.io">
-                    <div id="logo-title"><img src="/images/logo.png" alt="Site logo"/></div>
+                    <div id="logo-title"><img src="/images/logo.png" alt="Site logo"></div>
                     <div id="logo-subtitle">A Random Walk Through Computer Science</div>
                 </a>
             </div>
         </div>
 
-        <!-- Collection of nav links and other content for toggling -->
+        
         <div id="main-navbar-collapse" class="collapse navbar-collapse">
             <h5><a href="https://theblog.github.io">Posts</a></h5>
             <div class="nav navbar-nav">
@@ -120,7 +105,7 @@
                 
 
                 <li>
-                    <a  href="/post/convolution-in-autoregressive-neural-networks/">Convolutions in Autoregressive Neural Networks</a>
+                    <a href="/post/convolution-in-autoregressive-neural-networks/">Convolutions in Autoregressive Neural Networks</a>
                 </li>
                 
                 
@@ -135,7 +120,7 @@
                 
 
                 <li>
-                    <a  href="/post/gini-coefficient-intuitive-explanation/">Intuitive Explanation of the Gini Coefficient</a>
+                    <a href="/post/gini-coefficient-intuitive-explanation/">Intuitive Explanation of the Gini Coefficient</a>
                 </li>
                 
                 
@@ -144,7 +129,7 @@
                 
 
                 <li>
-                    <a  class="active"  href="/post/swift-icloud-key-value-store/">iCloud Key-Value Storage in Swift 3</a>
+                    <a class="active" href="/post/swift-icloud-key-value-store/">iCloud Key-Value Storage in Swift 3</a>
                 </li>
                 
                 
@@ -153,7 +138,7 @@
                 
 
                 <li>
-                    <a  href="/post/jekyll-github-pages-gulp-babel-directory-structure/">Directory Structure for Jekyll / GitHub Pages with Gulp and Babel</a>
+                    <a href="/post/jekyll-github-pages-gulp-babel-directory-structure/">Directory Structure for Jekyll / GitHub Pages with Gulp and Babel</a>
                 </li>
                 
                 
@@ -162,7 +147,7 @@
                 
 
                 <li>
-                    <a  href="/post/character-language-model-lstm-tensorflow/">An Interactive Character-Level Language Model</a>
+                    <a href="/post/character-language-model-lstm-tensorflow/">An Interactive Character-Level Language Model</a>
                 </li>
                 
                 
@@ -177,7 +162,7 @@
                 
 
                 <li>
-                    <a  href="/post/visualizing-travel-times-with-multidimensional-scaling/">Visualizing Travel Times with Multidimensional Scaling</a>
+                    <a href="/post/visualizing-travel-times-with-multidimensional-scaling/">Visualizing Travel Times with Multidimensional Scaling</a>
                 </li>
                 
                 
@@ -192,7 +177,7 @@
                 
 
                 <li>
-                    <a  href="/post/some-facts-i-did-not-know-about-java/">Some facts I did not know about Java</a>
+                    <a href="/post/some-facts-i-did-not-know-about-java/">Some facts I did not know about Java</a>
                 </li>
                 
                 
@@ -200,11 +185,11 @@
 
             </div>
             <h5><a href="/about/">About</a></h5>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
+        </div>
+    </div>
 </nav>
 
-<!-- Page Content start -->
+
 <section class="wrapper">
     <div id="content" class="container-fluid">
         <div class="row">
@@ -227,9 +212,9 @@
 
 <p>Select your project in Xcode and then select the target under "Project and Targets". Activate iCloud and check "Key-Value storage".</p>
 
-<img src="/images/posts/swift-icloud-key-value-store/project-settings.png" alt="Screenshot of project settings in Xcode"/>
+<img src="/images/posts/swift-icloud-key-value-store/project-settings.png" alt="Screenshot of project settings in Xcode">
 
-<!--more-->
+
 
 <h3>Add iCloud to your App ID</h3>
 
@@ -269,7 +254,7 @@
 
                 <h3>Like what you read?</h3>
                 <div>
-                    <div><applause-button url="https://theblog.github.io/swift-icloud-key-value-store" multiclap="true" color="rgb(10, 18, 79)"/></div>
+                    <div><applause-button url="https://theblog.github.io/swift-icloud-key-value-store" multiclap="true" color="rgb(10, 18, 79)"></applause-button></div>
                     <p>I don't use Google Analytics or Disqus because they require cookies. I would still like to know
                         which posts are popular, so if you liked this post you can let me know here.</p>
                 </div>
@@ -282,18 +267,18 @@
 </section>
 <footer class="footer">
     Powered by <a href="https://github.com/jekyll/jekyll" target="_blank">Jekyll</a>.
-    <br/>
+    <br>
     <a href="https://www.iubenda.com/privacy-policy/63560500/legal" class="no-highlight">Imprint and Privacy Policy</a>
 </footer>
-<!-- Page Content end -->
 
-<!-- jQuery -->
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<!-- Bootstrap Core JavaScript -->
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<!-- Other libraries -->
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.1.6/js/ion.rangeSlider.min.js"></script> -->
+
 <script src="/js/lib/highlight.min.js"></script>
 
 <script src="/js/general.js"></script>

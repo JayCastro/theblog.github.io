@@ -5,10 +5,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Visualizing Travel Times with Multidimensional Scaling</title>
 
-    <!-- SEO start -->
+    
     <meta name="description" content="What is Multidimensional Scaling? How can it help us to approximate arbitrary distances in 2 dimensions? Read this blog post to find out.">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="website">
@@ -19,9 +19,9 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:description" content="What is Multidimensional Scaling? How can it help us to approximate arbitrary distances in 2 dimensions? Read this blog post to find out.">
     <meta name="twitter:title" content="Visualizing Travel Times with Multidimensional Scaling">
-    <!-- SEO end -->
+    
 
-    <!-- Favicons start -->
+    
     <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-icon-72x72.png">
@@ -40,9 +40,9 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <!-- Favicons end -->
+    
 
-    <!-- Stylesheets start -->
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -53,47 +53,32 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/post-util.css">
     <link rel="stylesheet" href="/css/nav.css">
-    <!-- Stylesheets end -->
+    
 
       <link rel="stylesheet" href="https://unpkg.com/applause-button/dist/applause-button.css">
 
       <link rel="stylesheet" href="/css/posts/visualizing-travel-times-with-multidimensional-scaling.css">
 
 
-    <!-- Matomo start -->
-    <script type="text/javascript">
-        var _paq = window._paq || [];
-        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-        // Call disableCookies before calling trackPageView
-        _paq.push(['disableCookies']);
-        _paq.push(['trackPageView']);
-        _paq.push(['enableLinkTracking']);
-        (function() {
-            var u="https://ec2-01.batzner.io/analytics/matomo/";
-            _paq.push(['setTrackerUrl', u+'matomo.php']);
-            _paq.push(['setSiteId', '1']);
-            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-        })();
-    </script>
-    <!-- Matomo end-->
+    
+    <script type="text/javascript">var _paq=window._paq||[];_paq.push(["disableCookies"]),_paq.push(["trackPageView"]),_paq.push(["enableLinkTracking"]),function(){var e="https://ec2-01.batzner.io/analytics/matomo/";_paq.push(["setTrackerUrl",e+"matomo.php"]),_paq.push(["setSiteId","1"]);var a=document,t=a.createElement("script"),p=a.getElementsByTagName("script")[0];t.type="text/javascript",t.async=!0,t.defer=!0,t.src=e+"matomo.js",p.parentNode.insertBefore(t,p)}();</script>
+    
 </head>
 
 <body>
 
-<!-- Matomo Image Pixel start -->
-<img src="https://ec2-01.batzner.io/ln/mtmslm.php?idsite=1&amp;rec=1&amp;action_name=Visualizing+Travel+Times+with+Multidimensional+Scaling" style="border:0; margin:0; position:absolute; opacity:0; max-width:1px; max-height:1px" alt="" />
-<!-- Matomo Image Pixel end -->
+
+<img src="https://ec2-01.batzner.io/ln/mtmslm.php?idsite=1&amp;rec=1&amp;action_name=Visualizing+Travel+Times+with+Multidimensional+Scaling" style="border:0; margin:0; position:absolute; opacity:0; max-width:1px; max-height:1px" alt>
+
 
 <div id="main-navbar-sticky-background"></div>
 
 <nav role="navigation" id="main-navbar" class="navbar navbar-default">
 
     <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
+        
         <div class="navbar-header">
-            <button type="button" data-target="#main-navbar-collapse" data-toggle="collapse"
-                    class="navbar-toggle collapsed" aria-expanded="false">
+            <button type="button" data-target="#main-navbar-collapse" data-toggle="collapse" class="navbar-toggle collapsed" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -101,13 +86,13 @@
             </button>
             <div class="navbar-brand">
                 <a href="https://theblog.github.io">
-                    <div id="logo-title"><img src="/images/logo.png" alt="Site logo"/></div>
+                    <div id="logo-title"><img src="/images/logo.png" alt="Site logo"></div>
                     <div id="logo-subtitle">A Random Walk Through Computer Science</div>
                 </a>
             </div>
         </div>
 
-        <!-- Collection of nav links and other content for toggling -->
+        
         <div id="main-navbar-collapse" class="collapse navbar-collapse">
             <h5><a href="https://theblog.github.io">Posts</a></h5>
             <div class="nav navbar-nav">
@@ -121,7 +106,7 @@
                 
 
                 <li>
-                    <a  href="/post/convolution-in-autoregressive-neural-networks/">Convolutions in Autoregressive Neural Networks</a>
+                    <a href="/post/convolution-in-autoregressive-neural-networks/">Convolutions in Autoregressive Neural Networks</a>
                 </li>
                 
                 
@@ -136,7 +121,7 @@
                 
 
                 <li>
-                    <a  href="/post/gini-coefficient-intuitive-explanation/">Intuitive Explanation of the Gini Coefficient</a>
+                    <a href="/post/gini-coefficient-intuitive-explanation/">Intuitive Explanation of the Gini Coefficient</a>
                 </li>
                 
                 
@@ -145,7 +130,7 @@
                 
 
                 <li>
-                    <a  href="/post/swift-icloud-key-value-store/">iCloud Key-Value Storage in Swift 3</a>
+                    <a href="/post/swift-icloud-key-value-store/">iCloud Key-Value Storage in Swift 3</a>
                 </li>
                 
                 
@@ -154,7 +139,7 @@
                 
 
                 <li>
-                    <a  href="/post/jekyll-github-pages-gulp-babel-directory-structure/">Directory Structure for Jekyll / GitHub Pages with Gulp and Babel</a>
+                    <a href="/post/jekyll-github-pages-gulp-babel-directory-structure/">Directory Structure for Jekyll / GitHub Pages with Gulp and Babel</a>
                 </li>
                 
                 
@@ -163,7 +148,7 @@
                 
 
                 <li>
-                    <a  href="/post/character-language-model-lstm-tensorflow/">An Interactive Character-Level Language Model</a>
+                    <a href="/post/character-language-model-lstm-tensorflow/">An Interactive Character-Level Language Model</a>
                 </li>
                 
                 
@@ -178,7 +163,7 @@
                 
 
                 <li>
-                    <a  class="active"  href="/post/visualizing-travel-times-with-multidimensional-scaling/">Visualizing Travel Times with Multidimensional Scaling</a>
+                    <a class="active" href="/post/visualizing-travel-times-with-multidimensional-scaling/">Visualizing Travel Times with Multidimensional Scaling</a>
                 </li>
                 
                 
@@ -193,7 +178,7 @@
                 
 
                 <li>
-                    <a  href="/post/some-facts-i-did-not-know-about-java/">Some facts I did not know about Java</a>
+                    <a href="/post/some-facts-i-did-not-know-about-java/">Some facts I did not know about Java</a>
                 </li>
                 
                 
@@ -201,11 +186,11 @@
 
             </div>
             <h5><a href="/about/">About</a></h5>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
+        </div>
+    </div>
 </nav>
 
-<!-- Page Content start -->
+
 <section class="wrapper">
     <div id="content" class="container-fluid">
         <div class="row">
@@ -224,12 +209,12 @@
             <div class="panel-body post-body">
                 <div>Which map is correct?
 <div class="gmaps clearfix">
-    <div class="gmap-container-stub"><img src="/images/posts/visualizing-travel-times-with-multidimensional-scaling/map-correct.jpg" alt="Distances map"/></div>
-    <div class="gmap-container-stub"><img src="/images/posts/visualizing-travel-times-with-multidimensional-scaling/map-mds.jpg" alt="Durations map"/></div>
+    <div class="gmap-container-stub"><img src="/images/posts/visualizing-travel-times-with-multidimensional-scaling/map-correct.jpg" alt="Distances map"></div>
+    <div class="gmap-container-stub"><img src="/images/posts/visualizing-travel-times-with-multidimensional-scaling/map-mds.jpg" alt="Durations map"></div>
 </div>
 <p>In a geography exam, the correct answer would be the left or upper one. It displays the actual locations of four cities in the US. But that does not make the other map entirely incorrect. It just displays other data. Specifically, it approximates the travel times between the four cities. This means that the closer two cities are on the right map the faster you can travel between them with public transport. We can calculate such maps using Multidimensional Scaling. What is Multidimensional Scaling? How can it help us to approximate travel times? And what is the relationship between the left map with the geographic locations and the right map? We are about to find out.</p>
 
-<!--more-->
+
 
 <h3>Task</h3>
 Take a look at the following table.
@@ -320,7 +305,7 @@ It shows the great-circle distances between the cities in the two maps above. A 
 I created a small tool to visualize the results of this post. In the upper left corner of the map below, you will find a search box. Select three to ten cities which are reachable by public transportation. In the left or upper map, you will see their actual locations. The right or lower map will display the cities in a way that well-connected​ cities are closer to each other.
 
 <div class="gmaps clearfix">
-    <input id="pac-input" class="gmaps-controls" type="text" placeholder="Search Box"/>
+    <input id="pac-input" class="gmaps-controls" type="text" placeholder="Search Box">
     <div class="gmap-container">
         <div class="custom-gmap" id="city-map"></div>
     </div>
@@ -332,7 +317,7 @@ I created a small tool to visualize the results of this post. In the upper left 
 <div class="alert alert-danger" id="post-error"></div>
 
 If you want to understand why certain cities are close while others are not, you can take a look at the distance table and the table of travel durations below. Two cities being closer on the right map than on the left map indicates a good ratio between travel time and distance. If the cities' positions on the right map still seem arbitrary, please take a look at the "Solution" section below.
-<br/><br/>
+<br><br>
 <p>Distances:</p>
 <table id="distance-table" class="distance-table"></table>
 <p>Travel durations by public transport (next Monday at 12 pm in the time zone of the first city):</p>
@@ -461,7 +446,7 @@ function getSimilarityTransformation(fromPoints,
 
     // 2. Compute the scale.
     // The variance will first be a 1-D array and then reduced to a scalar.
-    const summator = (sum, elem) => {
+    const summator = (sum, elem) =&gt; {
         return sum + elem;
     };
     const fromVariance = fromPoints
@@ -469,7 +454,7 @@ function getSimilarityTransformation(fromPoints,
         .reduce(summator);
 
     let trace = 0;
-    for (let dimension = 0; dimension < dimensions; dimension++) {
+    for (let dimension = 0; dimension &lt; dimensions; dimension++) {
         const mirrorEntry = mirrorIdentityForSolution[dimension];
         trace += svd.diagonal[dimension] * mirrorEntry;
     }
@@ -529,7 +514,7 @@ function getSimilarityTransformationErrorBound(fromPoints,
     const dimensions = fromPoints.rows;
 
     // The variances will first be 1-D arrays and then reduced to a scalar.
-    const summator = (sum, elem) => {
+    const summator = (sum, elem) =&gt; {
         return sum + elem;
     };
     const fromVariance = fromPoints
@@ -550,7 +535,7 @@ function getSimilarityTransformationErrorBound(fromPoints,
         allowReflection);
 
     let trace = 0;
-    for (let dimension = 0; dimension < dimensions; dimension++) {
+    for (let dimension = 0; dimension &lt; dimensions; dimension++) {
         const mirrorEntry = mirrorIdentityForErrorBound[dimension];
         trace += svd.diagonal[dimension] * mirrorEntry;
     }
@@ -577,7 +562,7 @@ function getSimilarityTransformationCovariance(fromPoints, toPoints) {
 
     const covariance = mlMatrix.Matrix.zeros(dimensions, dimensions);
 
-    for (let pointIndex = 0; pointIndex < numPoints; pointIndex++) {
+    for (let pointIndex = 0; pointIndex &lt; numPoints; pointIndex++) {
         const fromPoint = fromPoints.getColumnVector(pointIndex);
         const toPoint = toPoints.getColumnVector(pointIndex);
         const outer = mlMatrix.Matrix.sub(toPoint, toMean)
@@ -613,7 +598,7 @@ function getSimilarityTransformationSvdWithMirrorIdentities(covarianceMatrix,
     let mirrorIdentityForSolution = Array(svd.diagonal.length).fill(1);
     if (!allowReflection) {
         // Compute equation 39 in umeyama_1991.
-        if (mlMatrix.determinant(covarianceMatrix) < 0) {
+        if (mlMatrix.determinant(covarianceMatrix) &lt; 0) {
             const lastIndex = mirrorIdentityForErrorBound.length - 1;
             mirrorIdentityForErrorBound[lastIndex] = -1;
         }
@@ -623,7 +608,7 @@ function getSimilarityTransformationSvdWithMirrorIdentities(covarianceMatrix,
         if (svd.rank === dimensions - 1) {
             // Compute equation 43 in umeyama_1991.
             mirrorIdentityForSolution = Array(svd.diagonal.length).fill(1);
-            if (mlMatrix.determinant(svd.U) * mlMatrix.determinant(svd.V) < 0) {
+            if (mlMatrix.determinant(svd.U) * mlMatrix.determinant(svd.V) &lt; 0) {
                 const lastIndex = mirrorIdentityForSolution.length - 1;
                 mirrorIdentityForSolution[lastIndex] = -1;
             }
@@ -677,24 +662,24 @@ function getMdsCoordinatesWithGradientDescent(distances,
     const lossPerStep = [];
     let accumulation = null;
 
-    for (let step = 0; step < maxSteps; step++) {
+    for (let step = 0; step &lt; maxSteps; step++) {
         const loss = getMdsLoss(distances, coordinates);
         lossPerStep.push(loss);
 
         // Check if we should early stop.
-        if (lossPerStep.length > 1) {
+        if (lossPerStep.length &gt; 1) {
             const lossPrev = lossPerStep[lossPerStep.length - 2];
-            if (Math.abs(lossPrev - loss) < minLossDifference) {
+            if (Math.abs(lossPrev - loss) &lt; minLossDifference) {
                 return {coordinates: coordinates, lossPerStep: lossPerStep};
             }
         }
 
-        if (logEvery > 0 && step % logEvery === 0) {
+        if (logEvery &gt; 0 && step % logEvery === 0) {
             console.log(`Step: ${step}, loss: ${loss}`);
         }
 
         // Apply the gradient for each coordinate.
-        for (let coordIndex = 0; coordIndex < numCoordinates; coordIndex++) {
+        for (let coordIndex = 0; coordIndex &lt; numCoordinates; coordIndex++) {
             const gradient = getGradientForCoordinate(
                 distances, coordinates, coordIndex);
 
@@ -738,7 +723,7 @@ function getGradientForCoordinate(distances, coordinates, coordIndex) {
     let gradient = mlMatrix.Matrix.zeros(1, coord.columns);
 
     for (let otherCoordIndex = 0;
-         otherCoordIndex < coordinates.rows;
+         otherCoordIndex &lt; coordinates.rows;
          otherCoordIndex++) {
 
         if (coordIndex === otherCoordIndex) continue;
@@ -801,11 +786,11 @@ function getMdsLoss(distances, coordinates) {
     let loss = 0;
     const normalizer = Math.pow(coordinates.rows, 2);
     for (let coordIndex1 = 0;
-         coordIndex1 < coordinates.rows;
+         coordIndex1 &lt; coordinates.rows;
          coordIndex1++) {
 
         for (let coordIndex2 = 0;
-             coordIndex2 < coordinates.rows;
+             coordIndex2 &lt; coordinates.rows;
              coordIndex2++) {
 
             if (coordIndex1 === coordIndex2) continue;
@@ -849,19 +834,19 @@ function getMdsCoordinatesWithGaussNewton(distances,
 
     const lossPerStep = [];
 
-    for (let step = 0; step < maxSteps; step++) {
+    for (let step = 0; step &lt; maxSteps; step++) {
         const loss = getMdsLoss(distances, coordinates);
         lossPerStep.push(loss);
 
         // Check if we should early stop.
-        if (lossPerStep.length > 1) {
+        if (lossPerStep.length &gt; 1) {
             const lossPrev = lossPerStep[lossPerStep.length - 2];
-            if (Math.abs(lossPrev - loss) < minLossDifference) {
+            if (Math.abs(lossPrev - loss) &lt; minLossDifference) {
                 return {coordinates: coordinates, lossPerStep: lossPerStep};
             }
         }
 
-        if (logEvery > 0 && step % logEvery === 0) {
+        if (logEvery &gt; 0 && step % logEvery === 0) {
             console.log(`Step: ${step}, loss: ${loss}`);
         }
 
@@ -869,8 +854,8 @@ function getMdsCoordinatesWithGaussNewton(distances,
         const {residuals, jacobian} = getResidualsWithJacobian(
             distances, coordinates);
         const update = mlMatrix.pseudoInverse(jacobian).mmul(residuals);
-        for (let coordIndex = 0; coordIndex < numCoordinates; coordIndex++) {
-            for (let dimension = 0; dimension < dimensions; dimension++) {
+        for (let coordIndex = 0; coordIndex &lt; numCoordinates; coordIndex++) {
+            for (let dimension = 0; dimension &lt; dimensions; dimension++) {
                 const updateIndex = coordIndex * dimensions + dimension;
                 const paramValue = coordinates.get(coordIndex, dimension);
                 const updateDelta = lr * update.get(updateIndex, 0);
@@ -914,11 +899,11 @@ function getResidualsWithJacobian(distances, coordinates) {
         numCoordinates * dimensions);
 
     for (let coordIndex1 = 0;
-         coordIndex1 < numCoordinates;
+         coordIndex1 &lt; numCoordinates;
          coordIndex1++) {
 
         for (let coordIndex2 = 0;
-             coordIndex2 < numCoordinates;
+             coordIndex2 &lt; numCoordinates;
              coordIndex2++) {
 
             if (coordIndex1 === coordIndex2) {
@@ -951,7 +936,7 @@ function getResidualsWithJacobian(distances, coordinates) {
 
             // Set the corresponding indices in the Jacobian.
             const rowIndex = numCoordinates * coordIndex1 + coordIndex2;
-            for (let dimension = 0; dimension < dimensions; dimension++) {
+            for (let dimension = 0; dimension &lt; dimensions; dimension++) {
                 const columIndex = dimensions * coordIndex1 + dimension;
                 const jacobianEntry = jacobian.get(rowIndex, columIndex);
                 const entryUpdated = jacobianEntry + residualWrtCoord1.get(
@@ -999,11 +984,11 @@ function getMdsLoss(distances, coordinates) {
     let loss = 0;
     const normalizer = Math.pow(coordinates.rows, 2);
     for (let coordIndex1 = 0;
-         coordIndex1 < coordinates.rows;
+         coordIndex1 &lt; coordinates.rows;
          coordIndex1++) {
 
         for (let coordIndex2 = 0;
-             coordIndex2 < coordinates.rows;
+             coordIndex2 &lt; coordinates.rows;
              coordIndex2++) {
 
             if (coordIndex1 === coordIndex2) continue;
@@ -1027,7 +1012,7 @@ function getMdsLoss(distances, coordinates) {
 
                 <h3>Like what you read?</h3>
                 <div>
-                    <div><applause-button url="https://theblog.github.io/visualizing-travel-times" multiclap="true" color="rgb(10, 18, 79)"/></div>
+                    <div><applause-button url="https://theblog.github.io/visualizing-travel-times" multiclap="true" color="rgb(10, 18, 79)"></applause-button></div>
                     <p>I don't use Google Analytics or Disqus because they require cookies. I would still like to know
                         which posts are popular, so if you liked this post you can let me know here.</p>
                 </div>
@@ -1040,18 +1025,18 @@ function getMdsLoss(distances, coordinates) {
 </section>
 <footer class="footer">
     Powered by <a href="https://github.com/jekyll/jekyll" target="_blank">Jekyll</a>.
-    <br/>
+    <br>
     <a href="https://www.iubenda.com/privacy-policy/63560500/legal" class="no-highlight">Imprint and Privacy Policy</a>
 </footer>
-<!-- Page Content end -->
 
-<!-- jQuery -->
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<!-- Bootstrap Core JavaScript -->
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<!-- Other libraries -->
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.1.6/js/ion.rangeSlider.min.js"></script> -->
+
 <script src="/js/lib/highlight.min.js"></script>
 
 <script src="/js/general.js"></script>
@@ -1066,7 +1051,7 @@ function getMdsLoss(distances, coordinates) {
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/0.5.7/chartjs-plugin-annotation.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js"></script>
-  <!-- <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.6.0/dist/tf.min.js"></script> -->
+  
   <script src="/js/posts/visualizing-travel-times-with-multidimensional-scaling/lib/markerwithlabel.js"></script>
   <script src="/js/posts/visualizing-travel-times-with-multidimensional-scaling/lib/general.js"></script>
   <script src="/js/posts/visualizing-travel-times-with-multidimensional-scaling/similarity-transformation.js"></script>
