@@ -48,8 +48,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.1.6/css/ion.rangeSlider.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github-gist.min.css">
     <link rel="stylesheet" href="/css/lib/ion.rangeSlider/css/ion.rangeSlider.skinFlat.css">
-    <link rel="stylesheet" href="/css/lib/highlight.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/post-util.css">
     <link rel="stylesheet" href="/css/nav.css">
@@ -406,7 +406,7 @@ If you want to understand why certain cities are close while others are not, you
 </div>
 
 <div id="code">
-    <pre data-value="similarityTransform"><code>/**
+    <pre data-value="similarityTransform"><code class="lang-js">/**
  * Transform a tuple of source points to match a tuple of target points
  * following equation 40, 41 and 42 of umeyama_1991.
  *
@@ -585,7 +585,11 @@ function getSimilarityTransformationCovariance(fromPoints, toPoints) {
  *   getSimilarityTransformationCovariance(...)
  * @param {boolean} allowReflection - If true, the source points may be
  *   reflected to achieve a better mean squared error.
- * @returns 
+ * @returns {{
+ *   svd: mlMatrix.SVD,
+ *   mirrorIdentityForErrorBound: number[],
+ *   mirrorIdentityForSolution: number[]
+ * }}
  */
 function getSimilarityTransformationSvdWithMirrorIdentities(covarianceMatrix,
                                                             allowReflection) {
@@ -622,7 +626,7 @@ function getSimilarityTransformationSvdWithMirrorIdentities(covarianceMatrix,
     }
 }
 </code></pre>
-    <pre data-value="gradientDescent" style="display: none;"><code>/**
+    <pre data-value="gradientDescent" style="display: none;"><code class="lang-js">/**
  * Solves a Multidimensional Scaling problem with gradient descent.
  *
  * If momentum is != 0, the update is:
@@ -646,7 +650,7 @@ function getSimilarityTransformationSvdWithMirrorIdentities(covarianceMatrix,
  *   to zero to disable momentum.
  * @param {!number} logEvery - if larger than zero, this value determines the
  *   steps between logs to the console.
- * @returns 
+ * @returns {{coordinates: mlMatrix.Matrix, lossPerStep: number[]}}
  */
 function getMdsCoordinatesWithGradientDescent(distances,
                                               {
@@ -804,7 +808,7 @@ function getMdsLoss(distances, coordinates) {
     }
     return loss;
 }</code></pre>
-    <pre data-value="gaussNewton" style="display: none;"><code>/**
+    <pre data-value="gaussNewton" style="display: none;"><code class="lang-js">/**
  * Solves a Multidimensional Scaling problem with the Gauss-Newton algorithm.
  *
  * In the returned object, coordinates is a matrix of shape (n, 2) containing
@@ -819,7 +823,7 @@ function getMdsLoss(distances, coordinates) {
  *   this value, the function will return early.
  * @param {!number} logEvery - if larger than zero, this value determines the
  *   steps between logs to the console.
- * @returns 
+ * @returns {{coordinates: mlMatrix.Matrix, lossPerStep: number[]}}
  */
 function getMdsCoordinatesWithGaussNewton(distances,
                                           {
@@ -888,7 +892,7 @@ function getMdsCoordinatesWithGaussNewton(distances,
  *   distances between n points, defining the MDS problem.
  * @param {!mlMatrix.Matrix} coordinates - a matrix of shape (n, d) containing
  *   the current solution, where d is the number of dimensions.
- * @returns 
+ * @returns {{jacobian: mlMatrix.Matrix, residuals: mlMatrix.Matrix}}
  */
 function getResidualsWithJacobian(distances, coordinates) {
     const residuals = [];
@@ -1037,7 +1041,7 @@ function getMdsLoss(distances, coordinates) {
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
 
-<script src="/js/lib/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
 
 <script src="/js/general.js"></script>
   <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
