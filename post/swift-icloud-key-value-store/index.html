@@ -228,25 +228,25 @@
 
 <p>Wherever you need to access the key-value store, call</p>
 
-<pre>
+<pre class="lang-swift">
     <code>var keyStore = NSUbiquitousKeyValueStore()</code>
 </pre>
 
 <p>Add data just like with the <code>UserDefaults</code>:</p>
 
-<pre>
+<pre class="lang-swift">
     <code>keyStore.set("John Appleseed", forKey: "userName")</code>
 </pre>
 
 <p>Retrieve data somewhere else with:</p>
 
-<pre>
+<pre class="lang-swift">
     <code>let storedUserName = keyStore.string(forKey: "userName")</code>
 </pre>
 
 <p>So far, the keyStore acts like the <code>UserDefaults</code>. The data will be stored locally. To sync them with iCloud, call</p>
 
-<pre>
+<pre class="lang-swift">
     <code>keyStore.synchronize()</code>
 </pre>
 
@@ -266,9 +266,8 @@
     </div>
 </section>
 <footer class="footer">
-    Powered by <a href="https://github.com/jekyll/jekyll" target="_blank">Jekyll</a>.
-    <br>
-    <a href="https://www.iubenda.com/privacy-policy/63560500/legal" class="no-highlight">Imprint and Privacy Policy</a>
+    <div>Powered by <a href="https://github.com/jekyll/jekyll" target="_blank">Jekyll</a>.</div>
+    <div style="margin-top: 5px"><a href="https://www.iubenda.com/privacy-policy/63560500/legal" style="color:inherit">Imprint and Privacy Policy</a></div>
 </footer>
 
 
